@@ -1,0 +1,6 @@
+{
+  "name": "Hotel Mansi Banquet & Garden Restaurant",
+  "description": "Experience luxury outdoor dining, banquet spaces, and a warm evening garden atmosphere in Palitana, Gujarat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

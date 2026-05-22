@@ -1,0 +1,161 @@
+import React from "react";
+
+interface LogoProps {
+  className?: string;
+  size?: number;
+}
+
+export default function Logo({ className = "", size = 48 }: LogoProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 500 500"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      id="hotel-mansi-vector-logo"
+    >
+      {/* Off-white branding background circular canvas */}
+      <circle cx="250" cy="250" r="248" fill="#fcf9f2" />
+
+      {/* Thick navy outer circular layout frame */}
+      <circle cx="250" cy="250" r="236" stroke="#0b1e33" strokeWidth="13" fill="none" />
+
+      {/* House outline - roof peak */}
+      <path
+        d="M 170 185 L 250 115 L 330 185"
+        stroke="#0b1e33"
+        strokeWidth="9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+
+      {/* Left house wall segment */}
+      <path
+        d="M 170 185 L 170 275 L 202 275"
+        stroke="#0b1e33"
+        strokeWidth="9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+
+      {/* Right house wall segment */}
+      <path
+        d="M 330 185 L 330 275 L 298 275"
+        stroke="#0b1e33"
+        strokeWidth="9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+
+      {/* Center base segment (between cutlery shafts) */}
+      <path
+        d="M 234 275 L 266 275"
+        stroke="#0b1e33"
+        strokeWidth="9"
+        strokeLinecap="round"
+        fill="none"
+      />
+
+      {/* Elegant 3-tine vector Fork (Left side of house) */}
+      <path
+        d="M 202 145 C 202 172 234 172 234 145 M 234 141 L 229 141 L 229 160 C 229 165 225 165 225 160 L 225 141 M 211 141 L 211 160 C 211 165 207 165 207 160 L 207 141"
+        stroke="#0b1e33"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+      {/* Fork Shaft */}
+      <line
+        x1="218"
+        y1="172"
+        x2="218"
+        y2="300"
+        stroke="#0b1e33"
+        strokeWidth="9"
+        strokeLinecap="round"
+      />
+
+      {/* Elegant Knife (Right side of house) */}
+      <path
+        d="M 278 210 L 278 158 C 278 158 296 168 296 185 L 296 210 Z"
+        fill="#0b1e33"
+      />
+      {/* Knife Shaft */}
+      <line
+        x1="282"
+        y1="210"
+        x2="282"
+        y2="300"
+        stroke="#0b1e33"
+        strokeWidth="9"
+        strokeLinecap="round"
+      />
+
+      {/* Styled Brand Text "HOTEL MANSI" */}
+      <text
+        x="250"
+        y="360"
+        textAnchor="middle"
+        fill="#0b1e33"
+        fontFamily='"Inter", "Space Grotesk", sans-serif'
+        fontWeight="800"
+        fontSize="34"
+        style={{ letterSpacing: "4px" }}
+      >
+        HOTEL MANSI
+      </text>
+
+      {/* Gold botanical dividing lines and center floral ornament */}
+      {/* Left divider line */}
+      <line
+        x1="120"
+        y1="400"
+        x2="225"
+        y2="400"
+        stroke="#c5a880"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+      />
+
+      {/* Right divider line */}
+      <line
+        x1="275"
+        y1="400"
+        x2="380"
+        y2="400"
+        stroke="#c5a880"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+      />
+
+      {/* Center floral ornament - 4 symmetrical petals */}
+      {/* Top petal */}
+      <path
+        d="M 250 400 C 245 393 245 385 250 382 C 255 385 255 393 250 400 Z"
+        fill="#c5a880"
+      />
+      {/* Bottom petal */}
+      <path
+        d="M 250 400 C 245 407 245 415 250 418 C 255 415 255 407 250 400 Z"
+        fill="#c5a880"
+      />
+      {/* Left petal */}
+      <path
+        d="M 250 400 C 243 395 235 395 232 400 C 235 405 243 405 250 400 Z"
+        fill="#c5a880"
+      />
+      {/* Right petal */}
+      <path
+        d="M 250 400 C 257 395 265 395 268 400 C 265 405 257 405 250 400 Z"
+        fill="#c5a880"
+      />
+    </svg>
+  );
+}
+
